@@ -94,13 +94,13 @@ else:
     ### Understanding each of the columns
     1. conterfeit: This is the target column we will be getting predictions for and it contains two unique classes (0 and 1)
     which translates directly into genuine and counterfeit notes respectively. This makes our task a binary classification task.
-    2. Length: The dimension of the length of the note in mm
-    3. Left:
-    4. Right:
-    5. Bottom:
-    6. Top:
-    7. Diagonal: 
-
+    2. Length: The dimension of the length of the note.
+    3. Left: The height of the note measured from the left.
+    4. Right: The height of the note measured from the right. Left and Right should be the same, except there are errors, which cannot be avoided.
+    5. Bottom: Distance of the inner frame to the border of the note, at the bottom.
+    6. Top: Distance of the inner frame to the border of the note, at the top.
+    7. Diagonal: Dimension of the diagonal distance of the note.
+    All dimensions are in millimeters (mm)
     The seven columns above are the columns in the dataset as one can see, and they should all make sense now.
 
     ### Guide to using the ML model
