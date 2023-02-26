@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name=
+    "viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <title>
+      Fake Bank Notes Detection
+    </title><!-- Favicon-->
+    <link href="assets/favicon.ico" rel="icon" type="image/x-icon">
+    <!-- Font Awesome icons (free version)-->
+
+    <script crossorigin="anonymous" src=
+    "https://use.fontawesome.com/releases/v6.1.0/js/all.js"></script><!-- Simple line icons-->
+    <link href=
+    "https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
+    rel="stylesheet"><!-- Google fonts-->
+    <link href=
+    "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+    rel="stylesheet" type="text/css">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body id="page-top">
+    <!-- Navigation-->
+    <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+          <a href="#page-top">Fake Bank Notes Detection</a>
+        </li>
+
+        <li class="sidebar-nav-item">
+          <a href="#page-top">Home</a>
+        </li>
+
+        <li class="sidebar-nav-item">
+          <a href="#about">About</a>
+        </li>
+
+        <li class="sidebar-nav-item">
+          <a href="#data">EDA</a>
+        </li>
+
+           <li class="sidebar-nav-item">
+          <a href="#machine_learning">Machine Learning</a>
+        </li>
+        
+        <li class="sidebar-nav-item">
+          <a href="#result">Result</a>
+        </li>
+
+        <li class="sidebar-nav-item">
+          <a href="#team">Make Prediction </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Header-->
+
+    <header class="masthead d-flex align-items-center">
+      <div class="container px-4 px-lg-5 text-center">
+        <h1 class="mb-1">
+          Fake Bank Notes Detection
+        </h1>
+
+        <h3 class="mb-5">
+          <em>An AI model that detects counterfeit Swiss Banknotes!</em>
+        </h3>
+        <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+      </div>
+    </header>
+    <!-- About-->
+       <section id="about" class="hero-image3">
+    
+    <body>
+          <div style="width:100%;height:0;position:relative;">
+      </div>
+
+      <div class="container px-4 px-lg-5 text-center">
+
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+
+
+          <div class="col-lg-10">
+            <h1 style= "color:white">
+              The Big Why ?
+            </h1>
+
+      <p style= "color:white;font-size: 20px">
+              About 1 in 100,000 banknotes in Switzerland
+              is counterfeit and about 1,000 counterfeit banknotes are
+              confiscated each year. This is why the Fake Bank Notes Detection team has been attempting to solve the problem of identifying counterfeit Swiss
+              Banknotes. In order to make this process of catching,
+              identifying and thwarting the use of counterfeit bills. It is evidently impractical to catch each person each time they print a
+              counterfeit bill. Instead it should be caught when the bill is
+              about to be used. This means that the business or person that is
+              receiving this bill should be able to verify that the bill is
+              “real” or counterfeit. Hence, they should be equipped
+              with the skills and tools to do this. By using the growing
+              popularity of the technology of AI, with our Machine Learning project anyone with
+              access to the internet will be able to verify the originality of
+              the bill being used. This can contribute a skill set to the people that
+              have no knowledge on these aspects, and are vulnerable
+              to fall victim to being scammed by these counterfeit bills. They will be enabled to identify and restrict further use of counterfeit
+              bills in the nation. On that day we can exclaim the statement <b>"Mission Complete!"</b>
+            </p>
+            <a class="btn btn-dark btn-xl" href="#data">What We Worked With</a>
+          </div>
+        </div>
+      </div>
+    </body>
+    </section>
+    <!-- Data-->
+    <section class="content-section bg-primary text-white text-center" id="data">
+      <div class="container px-4 px-lg-5">
+        <div class="content-section-heading">
+          <h2 class="text-secondary mb-0">
+            Data
+          </h2>
+
+          <h2 class="mb-5">
+            Plots
+          </h2>
+        </div>
+        <!--plot1-->
+
+        <div class="row gx-4 gx-lg-5">
+            <p align="center"><iframe src="top_bottom.html" width='850px' height='450px'></iframe></p>
+
+            <h4 align="center">
+              <strong>Top X Bottom</strong>
+            </h4>
+
+            <p class="text-faded mb-0" align="center">
+              The main change analyzed in the Bottom x Top plot is that bottom
+              measurements for counterfeit bills tend to be much larger than
+              real bills, which fall under 10 mm, while real bills hovering
+              around 9.5 mm.
+            </p>
+          <!--plot2-->
+
+          <div class="row gx-4 gx-lg-5">
+           <p align="center"><iframe src="length_diagonal.html" width='850px' height='450px'></iframe></p>
+
+            <h4>
+              <strong>Length x Diagonal</strong>
+            </h4>
+
+            <p class="text-faded mb-0">
+              The main change analyzed in the Diagonal x Length plot is that
+              the diagonal measurements of counterfeit bills tend to be a lot
+              shorter than real bills, which tend to be at least 141 mm, with
+              counterfeit bills being 140 or less.
+            </p>
+          </div>
+          <!--plot3-->
+
+         <div class="row gx-4 gx-lg-5">
+          
+            <p align="center"><iframe src="diagonal_top_bottom.html" width='850px' height='450px'> </iframe></p>
+            <h4>
+              <strong>Bottom x Top x Diagonal</strong>
+            </h4>
+
+            <p class="text-faded mb-0">
+              The 2 main changes analyzed in the Diagonal x Bottom x Top plot
+              are the differences in diagonal measurements and top
+              measurements. In real bills, the diagonal measurements tend to be
+              much larger and the top measurements tend to be a lot smaller,
+              and vice versa for the counterfeit bills. There is also a
+              difference for bottom measurements, which also tend to be smaller
+              in real bills and larger in counterfeit ones.
+            </p>
+          </div>
+          <!--plot4-->
+
+           <div class="row gx-4 gx-lg-5">
+          
+            <p align="center"><iframe src="diagonal_left_right.html" width='850px' height='450px'></iframe></p>
+            <h4>
+              <strong>Left x Right x Diagonal</strong>
+            </h4>
+
+            <p class="text-faded mb-0">
+             The main changes analyzed in the Diagonal x Left x Right plot are the differences in diagonal measurements and right measurements. The real banknotes show a smaller right size than the counterfeit bills, with barely any plots going bigger than 130 mm. On the contrary, the diagonal measurements are much larger for the real bills and a lot smaller for the counterfeit bills. 
+            </p>
+          </div>
+          <div class="row gx-4 gx-lg-5">
+          
+            <p align="center"><iframe src="diagonal_bottom.html" width='850px' height='450px'></iframe></p>
+            <h4>
+              <strong>Diagonal x Bottom</strong>
+            </h4>
+            <p class="text-faded mb-0">
+              In this graph we decided to show the dimensions of the bottom and the diagonal of the banknote with the yellow being the Diagonal and bottom length of the counterfeit bank notes. As you can see on the graph the counterfeit diagonal lengths are smaller than the legit banknotes. 
+
+            </p>
+            </div>
+         <div class="row gx-4 gx-lg-5">
+          
+            <p align="center"><iframe src="bottom_left_right.html" width='850px' height='450px'></iframe></p>
+            <h4>
+              <strong>Right x Left x Bottom</strong>
+            </h4>
+            <p class="text-faded mb-0">
+              In this data set we compared the lengths of the bottom, left, and right of the counterfeit and legit banknotes. As you can see from the graph the length of most of the bottom banknotes are much bigger than the legit ones. Most of the counterfeit bills have right measurements fairly larger than the real bills, which are smaller other than a few outliers.
+
+            </p>
+            </div> 
+        </div>
+      </div>
+    </section>
+    <!-- Machine Learning-->
+  <section id="machine_learning">
+    <section class="callout">
+      <div class="container px-4 px-lg-5 text-center">
+        <h2 class="mx-auto mb-5">
+          Banknotes Machine Learning Model <em></em>
+        </h2>
+        <p style="color:aliceblue">
+          For this project, when we used our machine learning models, it was very important to us that we achieve high accuracy, and with the amount of machine learning models we were using, we wanted perfection. And perfection we got.
+
+Every single machine learning model that we developed showed us a 100% accuracy, which we find to be an extremely good score. This shows us that our dataset is extremely clean, well organized, and lacks any unnecessary numbers, meaning thats a job well done on our side.
+        </p>
+        <br>
+        <br>
+        <h4 style="color:aliceblue">
+          Logistic Regression
+        </h4>
+        <img src="assets/img/Soma_callout_link.png" width="400" height= "300"> 
+        <p style="color:aliceblue">
+          Logistic Regression was developed and used to take in data and use that data to predict the output of future data. In our model, we used logistic regression to predict how many bills would be counterfeit and how many bills would be real. 
+        </p>
+        <br>
+        <br>
+        <h4 style="color:aliceblue">
+          Support Vector Machine (SVM/SVC)
+        </h4>
+<img src="https://www.mathworks.com/discovery/support-vector-machine/_jcr_content/mainParsys/image.adapt.full.medium.jpg/1630399092134.jpg" width="400" height="300">
+        <p style="color:aliceblue">
+         We used SVM and SVC models to divide and classify the data we had. If you know about these models, you will know they are used to divide data into two different classes. Therefore we used this knowledge to use SVM/SVC to divide our data into whether it is counterfeit or not, henceforth helping us achieve our goal. 
+        </p>
+<br>
+        <br>
+        <h4 style="color:aliceblue">
+          K-Nearest Neighbors (KNN)
+        </h4>
+<img alt="..." class="" src=https://tse2.mm.bing.net/th?id=OIP.9bExWMMJphoyzvBrcTW7JgHaF7&pid=Api&P=0 width="400" height="300">
+        <p style="color:aliceblue">
+          A model that was used in our code was KNN. In 1951 the first prototype of the KNN was produced by Evelyn Fix, and Joseph Lawson Hodges Jr., two students that studied at Berkeley. The way KNN models work is that it calculates similarities using distance between two points on a graph. Some cons of KNN would it be when working with large data sets the information is not entirely accurate. Some Pros for KNN would be how the model does not learn anything in the training period. Some real life application for the KNN model would be categorizing products, an example of this would be separating vegetables with fruit .
+
+        </p>
+        <br>
+        <br>
+        <h4 style="color:aliceblue">
+          Decision Tree
+        </h4>
+<img alt="..." class="" src=
+           https://cdn-icons-png.flaticon.com/512/5139/5139787.png  width="300" height="300">
+        <p style="color:aliceblue">
+          One of the other models we used is a Decision Tree. Created in 1963 at the University of Wisconsin-Madison, the decision tree was a model created to function using supervised machine learning. A decision tree starts at a single node, and goes on to split out into two or more directions. Each branch is a different outcome, and it continues to split until a final outcome is achieved. One of the best examples of this model is buying something online from somewhere that gives you different suggestions based off your search history and previous shopping history.
+        </p>
+
+        <h4 style="color:aliceblue">
+          Random Forest
+        </h4>
+<img alt="..." class="" height = "300" src="assets/img/Soma_random_forest.png"   width="400" height="300">
+        <p style="color:aliceblue">In our project, we also used Random Forest. Random Forest was invented by Leo Briemann and Adele Cutler in 2001. The algorithm works by constructing multiple decision trees and outputting the mean/mode of prediction of the trees. One pro of Random Forest is that you can get a very accurate classification from using it. It’s also able to handle large datasets, and it prevents overfitting. On the other hand, Random Forests are not easily interpretable. 
+        </p>
+        <br>
+        <br>
+        <h4 style="color:aliceblue">
+          Boosting
+        </h4>
+        <img alt="..." class=""  src="download-removebg-preview (1).png" width="500" height="300">
+
+        <p style="color:aliceblue">
+          In the Fake Bank Notes Detection project, we will explore 7 different models, two of which are Gradient Boosting & XG Boosting. Gradient boosting was an idea initially brought up in the 1990s in response to Kearns and Valiant’s question, "Can a set of weak learners create a single strong learner?". 
+This effective method of machine learning was popularized with the recent invention of XG Boosting. The way that boosting works is by running multiple weak classifiers in sequential order. Once one of the classifiers computes an output the model will calculate the error and then run it through the next classifier. The model repeat this cycle until it is directed to stop by the model parameters. This will allow it to potentially come up with very refined and accurate outputs.
+ This is unlike bagging when it will run multiple different models simultaneously and have them vote on which is the correct output. Boosting has a high accuracy without the need of much hyper tuning. Regardless, it comes at the expense of having a very high power consumption rate and is computationally expensive. This causes the model to have a tendency to take time and not be the most efficient way of machine learning.
+
+
+        </p>
+      </div>
+    </section>
+    </section>
+    <!-- Portfolio-->
+    <section id = "result" class="hero-image1">
+      <div>
+        <div class="content-section-heading text-center">
+          <h3 class="text-secondary mb-0">
+            
+          </h3>
+
+          <h2 class="mb-5" style="color: white">
+            Results
+          </h2>
+<p align="center" style="color: white"><iframe src="KNNconfusion_matrix.html" width='800px' height='400px'></iframe>
+  <br>The above image is a confusion matrix, a numerical matrix that helps us visualize values to tell us about our machine learning model and how well it is performing. Each box represents a value such as the top left box, which visualizes the true positive, or the top right, which visualizes true negative. Each model got a 1.00 score, memanning 100% accuracy.</p>
+      </div>
+        </div>
+     </section>
+
+    <!-- Page Content -->
+<section id="team" class="bg-primary text-center py-5 mb-4">
+<header class="bg-primary text-center py-5 mb-4">
+  <div class="container">
+    <h1 style="color:aliceblue" class="mb-5">Make Prediction</h1>
+  </div>
+</header>
+<div class="container">
+  
+  <p style="color:aliceblue">As Logistic Regression, Support Vector Machine (SVM/SVC), K-Nearest Neighbors (KNN), Decision Tree, Random Forest, and Boosting all give the same accuracy, we decided to go for Random Forest for the following reasons:</p>
+  <ul style="color:aliceblue; text-align: left;">
+    <li><strong>Interpretability:</strong> Random Forests are more interpretable than some other models, such as Support Vector Machines or Neural Networks. This means that the Random Forest algorithm can provide insight into which features are important in making the predictions, which is useful for understanding the problem domain and explaining the results to stakeholders.</li>
+    <li><strong>Speed:</strong> Random Forest is generally faster than some other models, such as K-Nearest Neighbors or Boosting, especially when working with large datasets.</li>
+    <li><strong>Robustness:</strong> Random Forest is a robust algorithm and can handle missing values and noisy data. Additionally, the algorithm is not very sensitive to the scaling of the features, making it easier to use on datasets where the features have different scales.</li>
+    <li><strong>Scalability:</strong> Random Forest can handle a large number of input features and is able to work well with high-dimensional data. This makes it a good choice for data scientists who are working with complex datasets.</li>
+  </ul>
+  <p style="color:aliceblue">Click the button below to visit the AWS Capstone Project:</p>
+    <a href="https://team-aws-capstone-project.streamlit.app/" target="_blank" class="newButton">Visit Project</a>
+
+</div>
+<!-- /.container -->
+  
+ </section>
+    <!-- Footer-->
+
+    <footer class="footer text-center">
+     
+
+        <p class="text-muted small mb-0">
+          Copyright © AWS_Capstone_Hamoye_Fall 2022
+        </p>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top"><i class=
+    "fas fa-angle-up"></i></a> <!-- Bootstrap core JS-->
+     
+    <script src=
+    "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+     
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
