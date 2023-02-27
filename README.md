@@ -1,6 +1,6 @@
 # Capstone-Project-Team-AWS-
 
-# ** Counterfeit Note Detection. **
+# ** Fake BankNote Detection. **
 
 The society is dealing with a huge number of counterfeit money as a result of the significant technological advancement, which ranges from bills with poor printing quality to those with excellent quality. Despite the extensive use of electronic and online payments, most people still find it necessary to use cash. Also, the idea of electronic payments plays a significant part in the fight against money forgery because these transactions are significantly safer because governments can monitor the source of the money. 
 
